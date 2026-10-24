@@ -1,15 +1,26 @@
 #container {
+    --size: 16;
     display: flex;
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
     justify-self: center;
+    border: 1px solid black;
 }
 
 .grid-item{
-    width: calc(100% / 16);
-  height: calc(100% / 16);
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: pink;
+    width: calc(100% / var(--size));
+    height: calc(100% / var(--size));
+    box-sizing: border-box;
+    border: 1px solid antiquewhite;
+    background-color: white;
+}
+
+.boxesButton{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    margin: 10px;
+    justify-self: center;
+    align-items: center;
 }
